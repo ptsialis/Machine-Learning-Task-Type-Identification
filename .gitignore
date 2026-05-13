@@ -1,0 +1,98 @@
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# ---------------------------
+# Virtual environments
+# ---------------------------
+venv/
+env/
+.env/
+.venv/
+mltid/
+
+# ---------------------------
+# Packaging / build outputs
+# ---------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------------------------
+# Jupyter Notebook
+# ---------------------------
+.ipynb_checkpoints/
+
+# ---------------------------
+# Data / datasets / experiment outputs
+# ---------------------------
+dataset/
+datasets/
+data/
+Exp1_Results/
+Exp2_Results/
+Exp3_Results/
+
+# CSV files
+*.csv
+
+# ---------------------------
+# Archives
+# ---------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Folders ending with .zip
+*.zip/
+
+# ---------------------------
+# API keys / secrets
+# ---------------------------
+API.txt
+api.txt
+*API*.txt
+*api*.txt
+.env
+*.env
+secrets.json
+config.local.json
+
+# ---------------------------
+# Logs / temporary files
+# ---------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ---------------------------
+# OS files
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# IDE / editor files
+# ---------------------------
+.vscode/
+.idea/
+
+# ---------------------------
+# Cache folders
+# ---------------------------
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

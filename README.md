@@ -34,17 +34,41 @@ Install all required Python packages from `req.txt`:
 pip install -r req.txt
 ```
 
-If the repository contains a `pyproject.toml` file and `req.txt` includes:
+If the `utils` package was not installed automatically, run the following command in the activated environment:
 
-```text
--e .
+```bash
+pip install -e .
 ```
 
-then the local project package is installed automatically as well.
+This installs the local project package in editable mode.
 
 ---
 
-## 3. Run Experiment 2
+## 3. Download the Dataset Folder
+
+The dataset folder can be downloaded from Zenodo:
+
+```text
+https://zenodo.org/records/20139892?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc3ODY5NDM4NCwiZXhwIjoxNzgzNjQxNTk5fQ.eyJpZCI6ImE4NDU2NDRhLWI5YjEtNGM4OC05M2RmLWIzYjc1ZTM0MWE1MyIsImRhdGEiOnt9LCJyYW5kb20iOiI1ZGFkNzU4MDhlMzRhNTMzYTUyNzRjMWUwYTk2NmVmYSJ9.Bob3QvBwjCMWUzOgI60GL3Q-EX1LUBXQSd0ORJNWeuiiF_NS3y8QFV0sGph01Vq-jwpNFGJyEefnXi3hu626uQ
+```
+
+After downloading, place the dataset folder at the same directory level as `meta_datasets`.
+
+Expected structure:
+
+```text
+Problem_Type_github/
+├── dataset/
+├── meta_datasets/
+├── run_exp2_train.py
+├── req.txt
+├── pyproject.toml
+└── utils/
+```
+
+---
+
+## 4. Run Experiment 2
 
 The main experiment script is:
 
@@ -62,7 +86,7 @@ python run_exp2_train.py --model Qwen/Qwen3-14B
 
 ---
 
-## 4. Available Parameters
+## 5. Available Parameters
 
 | Parameter | Options / Type | Default | Description |
 |---|---|---|---|
@@ -77,7 +101,7 @@ python run_exp2_train.py --model Qwen/Qwen3-14B
 
 ---
 
-## 5. Example Command
+## 6. Example Command
 
 The following command shows all available parameters in one execution example:
 
@@ -103,7 +127,7 @@ The selected metadata split can be changed with:
 
 ---
 
-## 6. Input Metadata Files
+## 7. Input Metadata Files
 
 The script uses one of the following metadata split files depending on the `--data` argument:
 
@@ -147,7 +171,7 @@ uses:
 
 ---
 
-## 7. Output Files
+## 8. Output Files
 
 Results are written to:
 
@@ -168,7 +192,7 @@ meta_data_exp.csv
 
 ---
 
-## 8. Explanation of Output Files
+## 9. Explanation of Output Files
 
 ### `experiment_results.csv`
 
@@ -328,7 +352,7 @@ These values document how many rows were loaded and whether contiguous grouped s
 
 ---
 
-## 9. Notes
+## 10. Notes
 
 Run the script from the folder where `run_exp2_train.py` is located, or make sure that the relative metadata paths are correct.
 
@@ -336,7 +360,7 @@ If imports from `utils` fail, make sure that:
 
 1. the local package is installed correctly;
 2. the `utils/` folder contains an `__init__.py` file;
-3. `req.txt` includes `-e .` if the package should be installed automatically.
+3. `pip install -e .` was executed in the activated environment.
 
 Expected project structure:
 
@@ -345,6 +369,7 @@ Problem_Type_github/
 ├── pyproject.toml
 ├── req.txt
 ├── run_exp2_train.py
+├── dataset/
 ├── utils/
 │   ├── __init__.py
 │   ├── file_handler_random.py

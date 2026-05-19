@@ -6,7 +6,7 @@ The main script is `run_exp2_train.py`, which evaluates a selected model on tabu
 The model predicts two aspects of each dataset:
 
 1. the **data domain**, for example `Tabular` or `Time_Series`;
-2. the **downstream task**, for example `regression`, `binary classification`, or `multiclass classification`.
+2. the **downstream task**, for example `regression/forecasting`, `binary classification`, or `multiclass classification`.
 
 ---
 

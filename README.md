@@ -692,6 +692,7 @@ secrets.json
 
 Expected project structure:
 
+```
 Problem_Type_github/
 ├── dataset/
 ├── meta_datasets/
@@ -709,3 +710,4 @@ Problem_Type_github/
 ├── req.txt
 ├── pyproject.toml
 └── utils/
+```

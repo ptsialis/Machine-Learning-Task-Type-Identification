@@ -66,8 +66,6 @@ Problem_Type_github/
 ├── pyproject.toml
 └── utils/
 ```
-If the repository is made public, replace the tokenized Zenodo review link with the final public Zenodo DOI or public record link.
-
 ---
 
 ## 4. Run Experiment 2

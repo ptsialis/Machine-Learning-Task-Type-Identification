@@ -60,7 +60,9 @@ Expected structure:
 Problem_Type_github/
 ├── dataset/
 ├── meta_datasets/
-├── run_exp2_train.py
+├── Exp1
+├── Exp2
+├── Exp3
 ├── req.txt
 ├── pyproject.toml
 └── utils/

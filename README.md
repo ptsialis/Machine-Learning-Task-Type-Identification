@@ -55,7 +55,7 @@ https://zenodo.org/records/20139892?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc3ODY5ND
 After downloading, place the dataset folder at the same directory level as `meta_datasets`.
 
 Expected structure:
-
+```
 Problem_Type_github/
 ├── dataset/
 ├── meta_datasets/
@@ -65,6 +65,7 @@ Problem_Type_github/
 ├── req.txt
 ├── pyproject.toml
 └── utils/
+```
 If the repository is made public, replace the tokenized Zenodo review link with the final public Zenodo DOI or public record link.
 
 ---
